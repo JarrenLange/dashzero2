@@ -58,12 +58,12 @@ class MainScreen(FloatLayout):
 class MainApp(MDApp):
     def __init__(self, **kwargs):
         self.register_event_type('on_state_changed')
-        self.load_theme()
 
         super().__init__(**kwargs)
         self.config = config
         self.connectors = {}
         self.platform = None
+        self.load_theme()
 
         if 'homeassistant' in config:
             self.connectors['homeassistant'] = HomeAssistant(self, self.config['homeassistant'])
