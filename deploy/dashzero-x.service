@@ -1,0 +1,18 @@
+[Unit]
+Description=DashZero X session
+After=systemd-user-sessions.service network.target
+
+[Service]
+User=jarren
+Environment=DISPLAY=:0
+PAMName=login
+Type=simple
+ExecStart=/usr/bin/xinit /home/jarren/.xinitrc -- :0
+Restart=on-failure
+RestartSec=5
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=dashzero-x
+
+[Install]
+WantedBy=multi-user.target

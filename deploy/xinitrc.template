@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Minimal ~/.xinitrc template for DashZero (Option B)
+# Copies of this file should be placed at ~/.xinitrc and marked executable
+
+# Optional: a lightweight window manager
+openbox &
+
+# Start the DashZero app via the project script
+exec /home/jarren/Documents/DashZeroVibe/dashzero2/scripts/start_kivy.sh
