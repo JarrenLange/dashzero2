@@ -2,8 +2,12 @@
 # Minimal ~/.xinitrc template for DashZero (Option B)
 # Copies of this file should be placed at ~/.xinitrc and marked executable
 
-# Optional: a lightweight window manager
-openbox &
+# If you want a lightweight window manager, uncomment one of the lines below and
+# install the corresponding package (e.g., `sudo apt install openbox`). On some
+# minimal images `openbox` may not be available; running without a WM is fine
+# for Kivy apps that manage their own windows.
+# openbox &
+# matchbox-window-manager &
 
 # Start the DashZero app via the project script
 exec /home/jarren/Documents/DashZeroVibe/dashzero2/scripts/start_kivy.sh
