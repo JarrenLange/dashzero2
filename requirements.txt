@@ -1,0 +1,18 @@
+# Conservative, tested dependency pins for this project.
+# Notes:
+# - Recommended Python: 3.11+ (Autobahn recent releases target newer Pythons).
+# - If your target uses an older Python (3.8/3.9/3.10), consider downgrading
+#   `autobahn`/`Twisted` to versions compatible with that interpreter.
+# - Install with: `python -m pip install -r requirements.txt`
+
+kivy==2.3.1
+kivymd==1.2.0
+PyYAML==6.0.3
+arrow==1.4.0
+ics==0.7.2
+requests==2.32.5
+autobahn==25.12.1
+Twisted==25.5.0
+
+# If you need lower Python compatibility (e.g. Python 3.8/3.9), replace
+# `autobahn` and `Twisted` with earlier versions known to support that Python.
